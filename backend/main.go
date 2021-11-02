@@ -37,7 +37,7 @@ func main() {
 			protected.PATCH("/staffs", controller.UpdateStaff)
 			protected.DELETE("/staffs/:id", controller.DeleteStaff)
 
-			// WatchVideo Routes
+			// Return Routes
 			protected.GET("/return_s/:id", controller.ListReturns)
 			protected.GET("/return/:id", controller.GetReturn)
 			protected.POST("/return_s", controller.CreateReturnod)
