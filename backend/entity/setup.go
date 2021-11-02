@@ -26,7 +26,7 @@ func SetupDatabase() {
 		&User{},
 		&Order{},
 		&Return{},
-		&Staff{},)
+		&Staff{})
 	db = database
 
 	password, err := bcrypt.GenerateFromPassword([]byte("123456"), 14)
