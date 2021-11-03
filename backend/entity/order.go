@@ -13,6 +13,6 @@ type Order struct {
 	User       User `gorm:"references:id"`
 	PreorderID int
 	StatusID   int
-	Ordertime  time.Time
+	OrderTime  time.Time
 	Returns    []Return `gorm:"foreignKey:OrderID"`
 }
