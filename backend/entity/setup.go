@@ -52,6 +52,7 @@ func SetupDatabase() {
 
 		// ระบบสั่งสินค้า
 		&Order{},
+		&Status{},
 	)
 	db = database
 
