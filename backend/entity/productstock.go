@@ -24,12 +24,14 @@ type Product struct {
 	ProductTypeID *uint
 	ProductType   ProductType    `gorm:"references:id"`
 	ProductStocks []ProductStock `gorm:"foreignKey:ProductID"`
+	Preorders     []Preorder     `gorm:"foreignKey:ProductID"`
 }
 
 type ProductType struct {
 	gorm.Model
-	Ptype    string
-	Products []Product `gorm:"foreignKey:ProductTypeID"`
+	Ptype     string
+	Products  []Product  `gorm:"foreignKey:ProductTypeID"`
+	Preorders []Preorder `gorm:"foreignKey:ProductID"`
 }
 
 type Supplier struct {
@@ -43,6 +45,7 @@ type ProductStock struct {
 
 	Price  int
 	Amount int
+
 	// ProductID ทำหน้าที่เป็น FK
 	ProductID *uint
 	Product   Product `gorm:"references:id"`

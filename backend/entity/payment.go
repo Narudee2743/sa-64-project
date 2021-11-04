@@ -8,8 +8,9 @@ import (
 
 type PaymentMethod struct {
 	gorm.Model
-	Method  string
-	Payment []Payment `gorm:"foreignKey:PaymentMethodID"`
+	Method    string
+	Payment   []Payment  `gorm:"foreignKey:PaymentMethodID"`
+	Preorders []Preorder `gorm:"foreignKey:PaymentMethodID"`
 }
 
 type DeliveryType struct {
