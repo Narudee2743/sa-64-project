@@ -15,4 +15,6 @@ type User struct {
 	Returns []Return `gorm:"foreignKey:OwnerID"`
 	// 1 user เป็นเจ้าของได้หลาย preorder
 	Preorders []Preorder `gorm:"foreignKey:UserID"`
+	// 1 user เป็นเจ้าของ 1 acoount
+	Accounts []Account `gorm:"foreignKey:OwnerID"`
 }

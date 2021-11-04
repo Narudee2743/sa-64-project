@@ -19,4 +19,6 @@ type Preorder struct {
 	// PaymentmethodID ทำหน้าที่เป็น FK
 	PaymentMethodID *uint
 	PaymentMethod   PaymentMethod `gorm:"references:id"`
+
+	Orders []Order `gorm:"foreignKey:PreorderID"`
 }
