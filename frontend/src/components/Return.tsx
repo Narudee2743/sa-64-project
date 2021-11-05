@@ -17,9 +17,15 @@ import { format } from 'date-fns'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        container: { marginTop: theme.spacing(2), },
-        table: {  minWidth: 650, }, 
-        tableSpace: { marginTop: 20, },
+        container: {
+            marginTop: theme.spacing(2),
+        },
+        table: {
+            minWidth: 650,
+        },
+        tableSpace: {
+            marginTop: 20,
+        },
     })
 );
 

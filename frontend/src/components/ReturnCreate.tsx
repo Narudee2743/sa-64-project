@@ -18,7 +18,7 @@ import { OrdersInterface } from "../models/IOrder";
 import { StaffsInterface } from "../models/IStaff";
 import { ReturnInterface } from "../models/IReturn";
 
-import { MuiPickersUtilsProvider, KeyboardDateTimePicker,} from "@material-ui/pickers";
+import { MuiPickersUtilsProvider, KeyboardDateTimePicker, } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
 import { TextField } from "@material-ui/core";
 
@@ -205,7 +205,7 @@ function ReturnCreate() {
                             <Typography
                                 color="textPrimary"
                             >
-                                <p>สมาชิก</p>
+                                สมาชิก
                             </Typography>
                             <Select
                                 native
@@ -225,7 +225,7 @@ function ReturnCreate() {
                             <Typography
                                 color="textPrimary"
                             >
-                                <p>หมายเลขคำสั่งซื้อ</p>
+                                หมายเลขคำสั่งซื้อ
                             </Typography>
 
                             <Select
@@ -253,7 +253,7 @@ function ReturnCreate() {
                             <Typography
                                 color="textPrimary"
                             >
-                                <p>พนักงาน</p>
+                                พนักงาน
                             </Typography>
                             <Select
                                 native
@@ -280,7 +280,7 @@ function ReturnCreate() {
                             <Typography
                                 color="textPrimary"
                             >
-                                <p>เหตุผล</p>
+                                เหตุผล
                             </Typography>
                             <option aria-label="None" value="">
                                 กรุณาใส่เหตุผล
@@ -299,10 +299,10 @@ function ReturnCreate() {
 
                     <Grid item xs={12}>
                         <FormControl fullWidth variant="outlined">
-                            <Typography
+                        <Typography
                                 color="textPrimary"
                             >
-                                <p>วันที่และเวลา</p>
+                                วันที่และเวลา
                             </Typography>
                             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                                 <KeyboardDateTimePicker
