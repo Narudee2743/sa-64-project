@@ -20,16 +20,9 @@ function Alert(props: AlertProps) {
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    container: {
-      marginTop: theme.spacing(2),
-    },
-    paper: {
-      padding: theme.spacing(2),
-      color: theme.palette.text.secondary,
-    },
+    root: { flexGrow: 1, },
+    container: { marginTop: theme.spacing(2), },
+    paper: { padding: theme.spacing(2), color: theme.palette.text.secondary, },
   })
 );
 
