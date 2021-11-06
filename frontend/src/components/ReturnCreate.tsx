@@ -178,7 +178,7 @@ function ReturnCreate() {
         <Container className={classes.container} maxWidth="sm">
             <Snackbar open={success} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success">
-                    บันทึกสำเร็จ
+                    บันทึกสำเร็จ รอตรวจสอบจากพนักงาน
                 </Alert>
             </Snackbar>
             <Snackbar open={error} autoHideDuration={6000} onClose={handleClose}>
